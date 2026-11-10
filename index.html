@@ -11,6 +11,15 @@
   <link rel="icon" href="assets/icon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="alternate" hreflang="en" href="https://springagent.kezhenxu94.me/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://springagent.kezhenxu94.me/zh-Hans/">
+  <link rel="alternate" hreflang="ja" href="https://springagent.kezhenxu94.me/ja/">
+  <link rel="alternate" hreflang="ko" href="https://springagent.kezhenxu94.me/ko/">
+  <link rel="alternate" hreflang="de" href="https://springagent.kezhenxu94.me/de/">
+  <link rel="alternate" hreflang="fr" href="https://springagent.kezhenxu94.me/fr/">
+  <link rel="alternate" hreflang="es" href="https://springagent.kezhenxu94.me/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://springagent.kezhenxu94.me/pt-BR/">
+  <link rel="alternate" hreflang="x-default" href="https://springagent.kezhenxu94.me/">
 </head>
 <body>
   <div class="wrap">
@@ -20,6 +29,16 @@
         <a href="#features" class="hide-narrow">Features</a>
         <a href="#pro">Pro</a>
         <a href="#support">Support</a>
+        <select class="lang" aria-label="Language" onchange="location.href = this.value">
+          <option value="./" selected lang="en">English</option>
+          <option value="./zh-Hans/" lang="zh-Hans">简体中文</option>
+          <option value="./ja/" lang="ja">日本語</option>
+          <option value="./ko/" lang="ko">한국어</option>
+          <option value="./de/" lang="de">Deutsch</option>
+          <option value="./fr/" lang="fr">Français</option>
+          <option value="./es/" lang="es">Español</option>
+          <option value="./pt-BR/" lang="pt-BR">Português (Brasil)</option>
+        </select>
       </nav>
     </header>
 
@@ -32,7 +51,7 @@
           <a class="button secondary" href="https://github.com/kezhenxu94/spring-agent">Run the server</a>
         </div>
       </div>
-      <img class="phone" src="assets/chats.jpg" alt="Spring Agent's conversation list on an iPhone">
+      <picture><source srcset="assets/chats-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/chats.jpg" alt="Spring Agent's conversation list on an iPhone"></picture>
     </div>
   </div>
 
@@ -78,10 +97,14 @@
   <section>
     <div class="wrap">
       <div class="gallery">
-        <figure><img class="phone" src="assets/chats.jpg" alt="Conversations grouped by day" loading="lazy"><figcaption>Conversations</figcaption></figure>
-        <figure><img class="phone" src="assets/connectors.jpg" alt="Connectors with their logos" loading="lazy"><figcaption>Connectors</figcaption></figure>
-        <figure><img class="phone" src="assets/abilities.jpg" alt="Per-tool choices for what the agent may do on the phone" loading="lazy"><figcaption>On this iPhone</figcaption></figure>
-        <figure><img class="phone" src="assets/library.jpg" alt="The library: tasks, memories, skills and knowledge" loading="lazy"><figcaption>Library</figcaption></figure>
+        <figure><picture><source srcset="assets/answer-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/answer.jpg" alt="An answer with the agent's thought process, tools and sources" loading="lazy"></picture><figcaption>Answers</figcaption></figure>
+        <figure><picture><source srcset="assets/on-this-iphone-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/on-this-iphone.jpg" alt="The agent asking before it sets an alarm on the iPhone" loading="lazy"></picture><figcaption>On this iPhone</figcaption></figure>
+        <figure><picture><source srcset="assets/chats-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/chats.jpg" alt="Conversations grouped by day" loading="lazy"></picture><figcaption>Conversations</figcaption></figure>
+        <figure><picture><source srcset="assets/connectors-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/connectors.jpg" alt="Connectors with their logos" loading="lazy"></picture><figcaption>Connectors</figcaption></figure>
+        <figure><picture><source srcset="assets/connect-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/connect.jpg" alt="Connecting Linear with an API key" loading="lazy"></picture><figcaption>Connect in seconds</figcaption></figure>
+        <figure><picture><source srcset="assets/abilities-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/abilities.jpg" alt="Per-tool choices for what the agent may do on the phone" loading="lazy"></picture><figcaption>Your rules</figcaption></figure>
+        <figure><picture><source srcset="assets/library-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/library.jpg" alt="The library: tasks, memories, skills and knowledge" loading="lazy"></picture><figcaption>Library</figcaption></figure>
+        <figure><picture><source srcset="assets/memory-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="assets/memory.jpg" alt="A memory the agent keeps, as a document" loading="lazy"></picture><figcaption>Memories</figcaption></figure>
       </div>
     </div>
   </section>

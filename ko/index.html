@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPhone용 Spring Agent</title>
+  <meta name="description" content="직접 운영하는 AI 에이전트를 위한 iPhone 앱. 에이전트와 대화하고, 에이전트가 거치는 모든 단계를 확인하고, 작업에 필요할 때 iPhone을 사용하도록 허용하세요.">
+  <meta property="og:title" content="iPhone용 Spring Agent">
+  <meta property="og:description" content="직접 운영하는 AI 에이전트를 위한 iPhone 앱.">
+  <meta property="og:image" content="https://springagent.kezhenxu94.me/assets/icon.png">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="alternate" hreflang="en" href="https://springagent.kezhenxu94.me/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://springagent.kezhenxu94.me/zh-Hans/">
+  <link rel="alternate" hreflang="ja" href="https://springagent.kezhenxu94.me/ja/">
+  <link rel="alternate" hreflang="ko" href="https://springagent.kezhenxu94.me/ko/">
+  <link rel="alternate" hreflang="de" href="https://springagent.kezhenxu94.me/de/">
+  <link rel="alternate" hreflang="fr" href="https://springagent.kezhenxu94.me/fr/">
+  <link rel="alternate" hreflang="es" href="https://springagent.kezhenxu94.me/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://springagent.kezhenxu94.me/pt-BR/">
+  <link rel="alternate" hreflang="x-default" href="https://springagent.kezhenxu94.me/">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="./"><img src="../assets/icon.png" alt="">Spring Agent</a>
+      <nav>
+        <a href="#features" class="hide-narrow">기능</a>
+        <a href="#pro">Pro</a>
+        <a href="#support">지원</a>
+        <select class="lang" aria-label="언어" onchange="location.href = this.value">
+          <option value="../" lang="en">English</option>
+          <option value="../zh-Hans/" lang="zh-Hans">简体中文</option>
+          <option value="../ja/" lang="ja">日本語</option>
+          <option value="../ko/" selected lang="ko">한국어</option>
+          <option value="../de/" lang="de">Deutsch</option>
+          <option value="../fr/" lang="fr">Français</option>
+          <option value="../es/" lang="es">Español</option>
+          <option value="../pt-BR/" lang="pt-BR">Português (Brasil)</option>
+        </select>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div>
+        <h1>나만의 AI 에이전트를 손안에.</h1>
+        <p class="lede">Spring Agent는 직접 운영하는 에이전트를 위한 iPhone 앱입니다. 에이전트와 대화하고, 에이전트가 거치는 모든 단계를 확인하고, 작업에 필요할 때 iPhone을 사용하도록 허용하세요. 언제나 사용자의 동의하에.</p>
+        <div class="cta">
+          <span class="button" aria-disabled="true">App Store 출시 예정</span>
+          <a class="button secondary" href="https://github.com/kezhenxu94/spring-agent">서버 실행하기</a>
+        </div>
+      </div>
+      <picture><source srcset="../assets/ko/chats-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/chats.jpg" alt="iPhone에 표시된 Spring Agent의 대화 목록"></picture>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>나의 서버. 나의 모델. 나의 iPhone.</h2>
+      <p class="intro">에이전트는 사용자의 서버에서 계속 실행됩니다. 앱은 에이전트를 들여다보는 창이자, 작업에 이 iPhone이 필요할 때는 에이전트의 손이 되어 줍니다.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="dot"></div>
+          <h3>과정까지 보이는 답변</h3>
+          <p>스트리밍으로 도착하는 답변과 함께 에이전트의 생각 과정, 사용한 모든 도구, 참고한 출처를 탭 한 번으로 확인할 수 있습니다.</p>
+        </div>
+        <div class="feature phone-feature">
+          <div class="dot"></div>
+          <h3>이 iPhone에서 직접 작업</h3>
+          <p>위치, 캘린더, 미리 알림, 알람, 건강, 연락처, 사진까지. 에이전트는 먼저 여기에서 요청하고, 도구마다 얼마나 자유롭게 사용할지는 사용자가 정합니다.</p>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <h3>커넥터</h3>
+          <p>MCP를 통해 GitHub, Linear, Stripe, Zapier, Feishu 등을 에이전트에 연결하거나, 직접 운영하는 MCP 서버를 추가하세요.</p>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <h3>한눈에 보이는 보관함</h3>
+          <p>예약된 작업, 기억, 스킬, 지식 문서 등 에이전트가 대화와 대화 사이에 유지하는 내용을 읽고 편집할 수 있습니다.</p>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <h3>개인정보 보호 중심 설계</h3>
+          <p>앱은 사용자가 로그인한 서버와만 통신합니다. 별도의 계정 등록, 분석, 추적이 없습니다.</p>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <h3>서버 없이 체험하기</h3>
+          <p>내장된 샘플 에이전트로 앱의 모든 기능을 iPhone 안에서 바로 확인할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><picture><source srcset="../assets/ko/answer-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/answer.jpg" alt="에이전트의 생각 과정, 도구, 출처가 함께 표시된 답변" loading="lazy"></picture><figcaption>답변</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/on-this-iphone-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/on-this-iphone.jpg" alt="iPhone에 알람을 설정하기 전에 허락을 구하는 에이전트" loading="lazy"></picture><figcaption>이 iPhone에서</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/chats-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/chats.jpg" alt="날짜별로 정리된 대화" loading="lazy"></picture><figcaption>대화</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/connectors-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/connectors.jpg" alt="로고와 함께 표시된 커넥터" loading="lazy"></picture><figcaption>커넥터</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/connect-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/connect.jpg" alt="API 키로 Linear 연결하기" loading="lazy"></picture><figcaption>몇 초 만에 연결</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/abilities-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/abilities.jpg" alt="에이전트가 iPhone에서 할 수 있는 일을 도구별로 선택하는 화면" loading="lazy"></picture><figcaption>나만의 규칙</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/library-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/library.jpg" alt="작업, 기억, 스킬, 지식이 담긴 보관함" loading="lazy"></picture><figcaption>보관함</figcaption></figure>
+        <figure><picture><source srcset="../assets/ko/memory-dark.jpg" media="(prefers-color-scheme: dark)"><img class="phone" src="../assets/ko/memory.jpg" alt="에이전트가 문서로 보관하는 기억" loading="lazy"></picture><figcaption>기억</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="wrap">
+      <h2>Spring Agent Pro</h2>
+      <p class="intro">에이전트와 대화하고, 캘린더나 위치를 읽도록 허용하는 것은 무료입니다. Pro를 사용하면 에이전트가 이 iPhone에서 알람, 이벤트, 미리 알림, 건강 기록, 메일과 메시지 초안 등을 변경할 수 있고, 커넥터를 세 개 넘게 켤 수 있습니다.</p>
+      <div class="pro">
+        <div class="plan"><h3>월간</h3><div class="price">$4.99</div><p>매월</p></div>
+        <div class="plan"><h3>연간</h3><div class="price">$39.99</div><p>매년, 신규 구독자는 1주일 무료 체험 가능</p></div>
+      </div>
+      <p class="fine">미국 가격 기준이며, 실제 가격은 App Store에 표시됩니다. 구독은 현재 기간이 끝나기 최소 24시간 전에 설정 › Apple 계정 › 구독에서 취소하지 않으면 자동으로 갱신됩니다. <a href="../terms">이용 약관(영문)</a>을 참고하세요.</p>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="wrap">
+      <h2>지원</h2>
+      <p class="intro">질문, 버그 제보, 아이디어가 있다면 <a href="https://github.com/kezhenxu94/spring-agent/issues">GitHub</a>에 이슈를 등록하거나 <a href="mailto:contact@kezhenxu94.me">contact@kezhenxu94.me</a>로 메일을 보내 주세요. 나만의 에이전트 서버를 운영하려면 <a href="https://github.com/kezhenxu94/spring-agent">Spring Agent 저장소</a>에서 시작하세요.</p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 kezhenxu94</span>
+      <nav>
+        <a href="../privacy">개인정보 처리방침(영문)</a>
+        <a href="../terms">이용 약관(영문)</a>
+        <a href="https://github.com/kezhenxu94/spring-agent">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
