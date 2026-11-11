@@ -28,19 +28,25 @@
 
   <article class="legal">
     <h1>Datenschutzrichtlinie</h1>
-    <p class="updated">Gültig ab 10. November 2026</p>
+    <p class="updated">Gültig ab 11. November 2026</p>
     <p class="updated">Dies ist eine Übersetzung. Weicht sie von der <a href="../privacy">englischen Fassung</a> ab, ist die englische Fassung maßgeblich.</p>
 
     <div class="summary">
-      <p><strong>Kurz gesagt:</strong> Wir erheben keine Daten von dir. Für Spring Agent benötigst du kein Konto bei uns, und es gibt weder Analysefunktionen noch Werbung noch Tracking. Die App kommuniziert ausschließlich mit dem Agent-Server, bei dem du dich anmeldest, und übermittelt diesem Server das, worum du deinen Agenten bittest.</p>
+      <p><strong>Kurz gesagt:</strong> Mit deinem eigenen Agent-Server erheben wir keine Daten von dir. Spring Agent hat weder Analysefunktionen noch Werbung noch Tracking. Die App kommuniziert ausschließlich mit dem Agent-Server, bei dem du dich anmeldest, und übermittelt diesem Server das, worum du deinen Agenten bittest. Wählst du Spring Agent Cloud, ist dieser Server unserer: Was er speichert und wohin er es sendet, steht unter <a href="#cloud">Spring Agent Cloud</a>.</p>
     </div>
 
     <p>Diese Richtlinie gilt für die App Spring Agent für iPhone und iPad („die App“), entwickelt von kezhenxu94 („wir“, „uns“).</p>
 
     <h2>Dein Agent-Server</h2>
-    <p>Die App ist ein Client für einen Spring Agent-Server, den du selbst betreibst oder den deine Organisation für dich betreibt. Bei der Anmeldung wählst du diesen Server aus. Ab diesem Zeitpunkt übermittelt die App ihm deine Nachrichten, die von dir angehängten Dateien, deine Einstellungen sowie die Ergebnisse aller Tools auf diesem iPhone, deren Nutzung du deinem Agenten erlaubst.</p>
-    <p>Wir betreiben deinen Server nicht und erhalten keine dieser Daten. Was der Server mit deinen Daten tut – einschließlich der Frage, an welche Anbieter von KI-Modellen er deine Unterhaltungen übermittelt –, entscheidet dessen Betreiber; maßgeblich sind dessen Richtlinien.</p>
+    <p>Die App ist ein Client für einen Spring Agent-Server: einen, den du selbst betreibst, den deine Organisation für dich betreibt oder – mit Spring Agent Cloud – den wir betreiben. Bei der Anmeldung wählst du diesen Server aus. Ab diesem Zeitpunkt übermittelt die App ihm deine Nachrichten, die von dir angehängten Dateien, deine Einstellungen sowie die Ergebnisse aller Tools auf diesem iPhone, deren Nutzung du deinem Agenten erlaubst.</p>
+    <p>Betreibst du oder deine Organisation den Server, betreiben wir ihn nicht und erhalten keine dieser Daten. Was der Server mit deinen Daten tut – einschließlich der Frage, an welche Anbieter von KI-Modellen er deine Unterhaltungen übermittelt –, entscheidet dessen Betreiber; maßgeblich sind dessen Richtlinien.</p>
     <p>Du meldest dich über die eigene Anmeldeseite deines Servers an. Das dabei erhaltene Zugriffstoken speichert die App im iOS-Schlüsselbund auf deinem Gerät.</p>
+
+    <h2 id="cloud">Spring Agent Cloud</h2>
+    <p>Spring Agent Cloud ist ein Agent-Server, den wir im Rahmen eines Abonnements für dich betreiben, unter cloud.springagent.kezhenxu94.me. Du meldest dich dort mit „Mit Apple anmelden“ an; das dabei erhaltene Zugriffstoken speichert die App im iOS-Schlüsselbund auf deinem Gerät.</p>
+    <p>Um deinen Agenten zu betreiben, speichert der Server, was die App ihm wie oben beschrieben übermittelt, außerdem, was dein Agent zwischen Unterhaltungen behält – geplante Aufgaben, Erinnerungen, Skills und Wissensdokumente – sowie die Schlüssel, die du für Konnektoren eingibst.</p>
+    <p>Um dir zu antworten, übermittelt der Server deine Nachrichten und alles auf diesem iPhone, was du deinen Agenten verwenden lässt, an den externen KI-Anbieter, den er nutzt. Dem stimmst du bei der Registrierung zu.</p>
+    <p>Damit du erfährst, wenn dein Agent dieses iPhone braucht, dir eine Frage stellt oder eine Antwort fertig ist, speichert der Server das Push-Token dieses Geräts, verknüpft mit deinem Konto, und sendet Mitteilungen über den Apple Push Notification Service. Eine Mitteilung kann den Anfang einer Antwort oder Frage sowie den Tool-Namen und die Argumente einer Anfrage enthalten; diese Argumente gehen außerdem in einer stillen Mitteilung über Apple, damit das iPhone eine von dir erlaubte Aktion im Hintergrund ausführen kann. Beim Abmelden bittet die App den Server, das Token zu entfernen. Mitteilungen kannst du jederzeit in den iOS-Einstellungen deaktivieren.</p>
 
     <h2>Daten auf diesem iPhone</h2>
     <p>Wenn eine Aufgabe dieses iPhone erfordert, bittet dein Agent die App, ein Tool zu verwenden, etwa um deinen Standort zu ermitteln, ein Kalenderereignis oder eine Erinnerung zu lesen oder hinzuzufügen, einen Wecker zu stellen, Health-Daten zu lesen oder einzutragen, einen Kontakt nachzuschlagen, ein aktuelles Foto zu finden oder eine E-Mail oder Nachricht zu entwerfen. Die App:</p>
@@ -48,31 +54,31 @@
       <li>verwendet jede Art von Daten erst, nachdem iOS dich um die entsprechende Berechtigung gebeten und du sie erteilt hast;</li>
       <li>richtet sich nach der Auswahl, die du für jedes Tool unter „Einstellungen“ › „Auf diesem iPhone“ triffst – „Erlaubt“, „Vorher fragen“ oder „Aus“;</li>
       <li>übermittelt das Ergebnis ausschließlich an deinen Agent-Server, und zwar für die Aufgabe, die es angefordert hat;</li>
-      <li>übermittelt es niemals an uns oder an Dritte.</li>
+      <li>übermittelt es niemals an uns oder an Dritte – außer an unseren Server und dessen KI-Anbieter, wenn du Spring Agent Cloud nutzt.</li>
     </ul>
     <p>Du kannst all dies unter „Einstellungen“ › „Auf diesem iPhone“ deaktivieren und jede Berechtigung jederzeit in den iOS-Einstellungen widerrufen.</p>
 
     <h2>Gesundheitsdaten</h2>
-    <p>Daten aus Apple Health werden nur gelesen oder geschrieben, wenn dein Agent darum bittet und du es erlaubst, und werden ausschließlich für diese Anfrage an deinen eigenen Agent-Server übermittelt. Sie werden niemals für Werbe- oder Marketingzwecke verwendet, niemals verkauft, von uns niemals an Dritte weitergegeben und von der App niemals in iCloud gespeichert.</p>
+    <p>Daten aus Apple Health werden nur gelesen oder geschrieben, wenn dein Agent darum bittet und du es erlaubst, und werden ausschließlich für diese Anfrage an deinen Agent-Server übermittelt; bei Spring Agent Cloud gibt dieser Server sie nur an seinen KI-Anbieter weiter, um diese Anfrage zu beantworten. Sie werden niemals für Werbe- oder Marketingzwecke verwendet, niemals verkauft, von uns niemals zu anderen Zwecken weitergegeben und von der App niemals in iCloud gespeichert.</p>
 
     <h2>Konnektoren</h2>
-    <p>Konnektoren werden auf deinem Agent-Server konfiguriert. API-Schlüssel oder Tokens, die du für einen Konnektor eingibst, werden an deinen Server übermittelt und dort gespeichert, nicht von uns.</p>
+    <p>Konnektoren werden auf deinem Agent-Server konfiguriert. API-Schlüssel oder Tokens, die du für einen Konnektor eingibst, werden an deinen Server übermittelt und dort gespeichert; bei Spring Agent Cloud ist das unser Server.</p>
 
     <h2>Beispielagent</h2>
     <p>„Ohne Server ausprobieren“ startet einen integrierten Beispielagenten. In diesem Modus verlässt nichts dein iPhone.</p>
 
     <h2>Käufe</h2>
-    <p>Spring Agent Pro wird über den App Store verkauft. Die Zahlung wird von Apple abgewickelt; wir erhalten keine Zahlungsdaten. Ob du Pro besitzt, prüft die App mit StoreKit von Apple auf deinem Gerät. Wir können von Apple aggregierte, anonyme Verkaufsberichte einsehen.</p>
+    <p>Spring Agent Pro und Spring Agent Cloud werden über den App Store verkauft. Die Zahlung wird von Apple abgewickelt; wir erhalten keine Zahlungsdaten. Ob du Pro besitzt, prüft die App mit StoreKit von Apple auf deinem Gerät. Für Spring Agent Cloud übermittelt die App unserem Server zusätzlich den vom App Store signierten Kaufbeleg, damit er dein Abo bei Apple prüfen kann. Wir können von Apple aggregierte, anonyme Verkaufsberichte einsehen.</p>
 
     <h2>Was wir nicht tun</h2>
     <ul>
-      <li>Wir betreiben keine Server, die Daten von der App empfangen.</li>
+      <li>Abgesehen von Spring Agent Cloud, falls du es wählst, betreiben wir keine Server, die Daten von der App empfangen.</li>
       <li>Die App enthält keine SDKs für Analyse, Werbung oder Absturzberichte.</li>
-      <li>Wir verfolgen dich nicht über Apps oder Websites hinweg und verkaufen oder teilen keine Daten.</li>
+      <li>Wir verfolgen dich nicht über Apps oder Websites hinweg, verkaufen keine Daten und geben sie nicht für Werbung weiter.</li>
     </ul>
 
     <h2>Kinder</h2>
-    <p>Die App richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von ihnen – oder von irgendjemand anderem.</p>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von ihnen.</p>
 
     <h2>Änderungen</h2>
     <p>Wenn sich diese Richtlinie ändert, wird die neue Fassung hier mit einem neuen Gültigkeitsdatum veröffentlicht.</p>

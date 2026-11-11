@@ -28,19 +28,25 @@
 
   <article class="legal">
     <h1>Política de Privacidade</h1>
-    <p class="updated">Em vigor desde 10 de novembro de 2026</p>
+    <p class="updated">Em vigor desde 11 de novembro de 2026</p>
     <p class="updated">Esta é uma tradução. Em caso de divergência com a <a href="../privacy">versão em inglês</a>, prevalece a versão em inglês.</p>
 
     <div class="summary">
-      <p><strong>Em resumo:</strong> não coletamos os seus dados. O Spring Agent não exige nenhuma conta conosco e não tem análise de uso, publicidade nem rastreamento. O app se comunica apenas com o servidor de agente em que você inicia sessão e envia a esse servidor aquilo que você pede ao seu agente para fazer.</p>
+      <p><strong>Em resumo:</strong> com o seu próprio servidor de agente, não coletamos os seus dados. O Spring Agent não tem análise de uso, publicidade nem rastreamento. O app se comunica apenas com o servidor de agente em que você inicia sessão e envia a esse servidor aquilo que você pede ao seu agente para fazer. Se você escolher o Spring Agent Cloud, esse servidor é nosso: veja em <a href="#cloud">Spring Agent Cloud</a> o que ele guarda e para onde envia.</p>
     </div>
 
     <p>Esta política abrange o app Spring Agent para iPhone e iPad (“o app”), desenvolvido por kezhenxu94 (“nós”).</p>
 
     <h2>Seu servidor de agente</h2>
-    <p>O app é um cliente de um servidor Spring Agent que você mesmo executa ou que a sua organização executa para você. Ao iniciar sessão, você escolhe esse servidor. A partir de então, o app envia a ele as suas mensagens, os arquivos que você anexa, os seus ajustes e os resultados de quaisquer ferramentas deste iPhone que você permitir que o seu agente use.</p>
-    <p>Não operamos o seu servidor e não recebemos nenhum desses dados. O que o servidor faz com os seus dados — inclusive para quais provedores de modelos de IA ele envia as suas conversas — é decidido por quem o opera e se rege pelas políticas dessa pessoa ou organização.</p>
+    <p>O app é um cliente de um servidor Spring Agent: um que você mesmo executa, que a sua organização executa para você ou, com o Spring Agent Cloud, que nós executamos. Ao iniciar sessão, você escolhe esse servidor. A partir de então, o app envia a ele as suas mensagens, os arquivos que você anexa, os seus ajustes e os resultados de quaisquer ferramentas deste iPhone que você permitir que o seu agente use.</p>
+    <p>Se o servidor é operado por você ou pela sua organização, não o operamos e não recebemos nenhum desses dados. O que o servidor faz com os seus dados — inclusive para quais provedores de modelos de IA ele envia as suas conversas — é decidido por quem o opera e se rege pelas políticas dessa pessoa ou organização.</p>
     <p>Você inicia sessão pela própria página de login do seu servidor. O app guarda o token de acesso resultante no Porta-chaves do iOS, no seu dispositivo.</p>
+
+    <h2 id="cloud">Spring Agent Cloud</h2>
+    <p>O Spring Agent Cloud é um servidor de agente que operamos para você, em cloud.springagent.kezhenxu94.me, mediante assinatura. Você inicia sessão nele com “Iniciar sessão com a Apple”, e o app guarda o token de acesso resultante no Porta-chaves do iOS, no seu dispositivo.</p>
+    <p>Para executar o seu agente, o servidor armazena o que o app envia a ele, como descrito acima, junto com o que o seu agente guarda entre conversas — tarefas agendadas, memórias, habilidades e documentos de conhecimento — e as chaves de conectores que você inserir.</p>
+    <p>Para responder a você, o servidor envia as suas mensagens, e tudo deste iPhone que você deixar o seu agente usar, ao provedor de IA terceiro que ele utiliza. Você concorda com isso ao se cadastrar.</p>
+    <p>Para avisar você quando o seu agente precisa deste iPhone, faz uma pergunta ou tem uma resposta pronta, o servidor armazena o token de notificações deste dispositivo, vinculado à sua conta, e envia as notificações pelo serviço de notificações push da Apple (APNs). Uma notificação pode conter o início de uma resposta ou pergunta, e o nome da ferramenta e os argumentos de uma solicitação; esses argumentos também passam pela Apple em uma notificação silenciosa, para que o iPhone possa executar em segundo plano uma ação que você permitiu. Ao encerrar a sessão, o app pede ao servidor que remova o token. Você pode desativar as notificações a qualquer momento nos Ajustes do iOS.</p>
 
     <h2>Dados deste iPhone</h2>
     <p>Quando uma tarefa precisa deste iPhone, o seu agente pede ao app para usar uma ferramenta, como descobrir a sua localização, ler ou adicionar um evento ou lembrete, definir um alarme, ler ou registrar dados do app Saúde, procurar um contato, encontrar uma foto recente ou redigir um e-mail ou uma mensagem. O app:</p>
@@ -48,31 +54,31 @@
       <li>usa cada tipo de dado somente depois que o iOS tiver solicitado, e você tiver concedido, permissão para isso;</li>
       <li>segue a escolha que você fizer para cada ferramenta em Ajustes › Neste iPhone — permitida, perguntar a cada vez ou desativada;</li>
       <li>envia o resultado apenas ao seu servidor de agente, para a tarefa que o solicitou;</li>
-      <li>nunca o envia para nós nem para mais ninguém.</li>
+      <li>nunca o envia para nós nem para mais ninguém, exceto para o nosso servidor e o provedor de IA dele quando você usa o Spring Agent Cloud.</li>
     </ul>
     <p>Você pode desativar tudo isso em Ajustes › Neste iPhone e revogar qualquer permissão nos Ajustes do iOS a qualquer momento.</p>
 
     <h2>Dados de saúde</h2>
-    <p>Os dados do app Saúde da Apple são lidos ou gravados somente quando o seu agente pede e você permite, e são enviados apenas ao seu próprio servidor de agente, para essa solicitação. Eles nunca são usados para publicidade ou marketing, nunca são vendidos, nunca são compartilhados por nós com terceiros e nunca são armazenados pelo app no iCloud.</p>
+    <p>Os dados do app Saúde da Apple são lidos ou gravados somente quando o seu agente pede e você permite, e são enviados apenas ao seu servidor de agente, para essa solicitação; no Spring Agent Cloud, esse servidor os repassa ao provedor de IA dele somente para responder a essa solicitação. Eles nunca são usados para publicidade ou marketing, nunca são vendidos, nunca são compartilhados por nós para nenhuma outra finalidade e nunca são armazenados pelo app no iCloud.</p>
 
     <h2>Conectores</h2>
-    <p>Os conectores são configurados no seu servidor de agente. Quaisquer chaves de API ou tokens que você inserir para um conector são enviados ao seu servidor e armazenados lá, não por nós.</p>
+    <p>Os conectores são configurados no seu servidor de agente. Quaisquer chaves de API ou tokens que você inserir para um conector são enviados ao seu servidor e armazenados lá; no Spring Agent Cloud, esse servidor é o nosso.</p>
 
     <h2>Agente de exemplo</h2>
     <p>“Experimente sem servidor” executa um agente de exemplo integrado. Nesse modo, nada sai do seu iPhone.</p>
 
     <h2>Compras</h2>
-    <p>O Spring Agent Pro é vendido pela App Store. A Apple processa o pagamento; não recebemos nenhum dado de pagamento. O app verifica se você tem o Pro por meio do StoreKit da Apple, no seu dispositivo. Podemos ver relatórios de vendas agregados e anônimos fornecidos pela Apple.</p>
+    <p>O Spring Agent Pro e o Spring Agent Cloud são vendidos pela App Store. A Apple processa o pagamento; não recebemos nenhum dado de pagamento. O app verifica se você tem o Pro por meio do StoreKit da Apple, no seu dispositivo. Para o Spring Agent Cloud, o app também envia ao nosso servidor o comprovante de compra assinado pela App Store, para que ele verifique a sua assinatura com a Apple. Podemos ver relatórios de vendas agregados e anônimos fornecidos pela Apple.</p>
 
     <h2>O que não fazemos</h2>
     <ul>
-      <li>Não temos servidores que recebam dados do app.</li>
+      <li>Fora o Spring Agent Cloud, se você escolhê-lo, não temos servidores que recebam dados do app.</li>
       <li>O app não contém SDKs de análise de uso, de publicidade nem de relatórios de falhas.</li>
-      <li>Não rastreamos você entre apps ou sites e não vendemos nem compartilhamos dados.</li>
+      <li>Não rastreamos você entre apps ou sites, não vendemos dados e não os compartilhamos para publicidade.</li>
     </ul>
 
     <h2>Crianças</h2>
-    <p>O app não se destina a crianças menores de 13 anos, e não coletamos intencionalmente dados delas — nem de ninguém.</p>
+    <p>O app não se destina a crianças menores de 13 anos, e não coletamos intencionalmente dados delas.</p>
 
     <h2>Alterações</h2>
     <p>Se esta política mudar, a nova versão será publicada aqui com uma nova data de vigência.</p>

@@ -28,18 +28,24 @@
 
   <article class="legal">
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective November 10, 2026</p>
+    <p class="updated">Effective November 11, 2026</p>
 
     <div class="summary">
-      <p><strong>In short:</strong> we don't collect your data. Spring Agent has no account with us, no analytics, no advertising and no tracking. The app talks only to the agent server you sign in to, and sends that server what you ask your agent to do.</p>
+      <p><strong>In short:</strong> on your own agent server, we don't collect your data. Spring Agent has no analytics, no advertising and no tracking. The app talks only to the agent server you sign in to, and sends that server what you ask your agent to do. If you choose Spring Agent Cloud, that server is ours: see <a href="#cloud">Spring Agent Cloud</a> for what it keeps and where it sends it.</p>
     </div>
 
     <p>This policy covers the Spring Agent app for iPhone and iPad (“the app”), made by kezhenxu94 (“we”, “us”).</p>
 
     <h2>Your agent server</h2>
-    <p>The app is a client for a Spring Agent server that you run yourself, or that your organization runs for you. When you sign in, you choose that server. From then on, the app sends it your messages, the files you attach, your settings, and the results of any tools on this phone that you allow your agent to use.</p>
-    <p>We do not operate your server and receive none of this. What the server does with your data — including which AI model providers it sends your conversations to — is decided by whoever operates it, and is governed by their policies.</p>
+    <p>The app is a client for a Spring Agent server: one that you run yourself, that your organization runs for you, or, with Spring Agent Cloud, that we run. When you sign in, you choose that server. From then on, the app sends it your messages, the files you attach, your settings, and the results of any tools on this phone that you allow your agent to use.</p>
+    <p>If you or your organization run the server, we do not operate it and receive none of this. What the server does with your data — including which AI model providers it sends your conversations to — is decided by whoever operates it, and is governed by their policies.</p>
     <p>You sign in through your server's own sign-in page. The app keeps the resulting access token in the iOS Keychain on your device.</p>
+
+    <h2 id="cloud">Spring Agent Cloud</h2>
+    <p>Spring Agent Cloud is an agent server we run for you, at cloud.springagent.kezhenxu94.me, for a subscription. You sign in to it with Sign in with Apple, and the app keeps the resulting access token in the iOS Keychain on your device.</p>
+    <p>To run your agent, the server stores what the app sends it, as described above, together with what your agent keeps between conversations — scheduled tasks, memories, skills and knowledge documents — and any connector keys you enter.</p>
+    <p>To answer you, the server sends your messages, and anything on this phone you let your agent use, to the third-party AI provider it uses. You agree to this when you sign up.</p>
+    <p>To let you know when your agent needs this phone, asks you a question or has an answer ready, the server stores this device's push token, linked to your account, and sends notifications through Apple Push Notification service. A notification may contain the start of an answer or question, and a request's tool name and arguments; those arguments also pass through Apple in a silent notification, so that the phone can run an action you allowed in the background. Signing out asks the server to remove the token. You can turn notifications off in iOS Settings at any time.</p>
 
     <h2>Data on this phone</h2>
     <p>When a task needs this phone, your agent asks the app to use a tool, such as finding your location, reading or adding a calendar event or reminder, setting an alarm, reading or logging Health data, looking up a contact, finding a recent photo, or drafting a mail or message. The app:</p>
@@ -47,31 +53,31 @@
       <li>uses each kind of data only after iOS has asked for, and you have granted, permission for it;</li>
       <li>follows the choice you make for each tool in Settings › On this iPhone — allowed, ask each time, or off;</li>
       <li>sends the result only to your agent server, for the task that asked for it;</li>
-      <li>never sends it to us or to anyone else.</li>
+      <li>never sends it to us or to anyone else, except to our server and its AI provider when you use Spring Agent Cloud.</li>
     </ul>
     <p>You can turn off all of this in Settings › On this iPhone, and withdraw any permission in iOS Settings at any time.</p>
 
     <h2>Health data</h2>
-    <p>Data from Apple Health is read or written only when your agent asks and you allow it, and is sent only to your own agent server for that request. It is never used for advertising or marketing, never sold, never shared with third parties by us, and never stored by the app in iCloud.</p>
+    <p>Data from Apple Health is read or written only when your agent asks and you allow it, and is sent only to your agent server for that request; on Spring Agent Cloud, that server passes it to its AI provider only to answer that request. It is never used for advertising or marketing, never sold, never shared by us for any other purpose, and never stored by the app in iCloud.</p>
 
     <h2>Connectors</h2>
-    <p>Connectors are configured on your agent server. Any API keys or tokens you enter for a connector are sent to your server and stored there, not by us.</p>
+    <p>Connectors are configured on your agent server. Any API keys or tokens you enter for a connector are sent to your server and stored there; on Spring Agent Cloud, that server is ours.</p>
 
     <h2>Sample agent</h2>
     <p>“Try it without a server” runs a built-in sample agent. In that mode nothing leaves your phone.</p>
 
     <h2>Purchases</h2>
-    <p>Spring Agent Pro is sold through the App Store. Apple processes payment; we receive no payment details. The app checks whether you have Pro with Apple's StoreKit on your device. We may see aggregate, anonymous sales reports from Apple.</p>
+    <p>Spring Agent Pro and Spring Agent Cloud are sold through the App Store. Apple processes payment; we receive no payment details. The app checks whether you have Pro with Apple's StoreKit on your device. For Spring Agent Cloud, the app also sends our server the App Store's signed record of your purchase, so that it can verify your subscription with Apple. We may see aggregate, anonymous sales reports from Apple.</p>
 
     <h2>What we don't do</h2>
     <ul>
-      <li>We have no servers that receive data from the app.</li>
+      <li>Apart from Spring Agent Cloud, if you choose it, we have no servers that receive data from the app.</li>
       <li>The app contains no analytics, advertising or crash-reporting SDKs.</li>
-      <li>We don't track you across apps or websites, and don't sell or share data.</li>
+      <li>We don't track you across apps or websites, and don't sell data or share it for advertising.</li>
     </ul>
 
     <h2>Children</h2>
-    <p>The app is not directed at children under 13, and we do not knowingly collect data from them — or from anyone.</p>
+    <p>The app is not directed at children under 13, and we do not knowingly collect data from them.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the new version will be posted here with a new effective date.</p>
